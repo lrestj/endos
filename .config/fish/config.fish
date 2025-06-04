@@ -8,21 +8,15 @@ abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
-abbr yay "cd ~/.dotfiles/nixos && sudo nix flake update"
 abbr yup "ya pack -u"
-abbr clean "sudo nix-collect-garbage"
-abbr cleanall "sudo nix-collect-garbage -d && nix-collect-garbage -d && sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/"
 abbr reb "reboot"
-abbr nxs "nix-shell -p"
-abbr nrs "sudo nixos-rebuild switch --flake ~/.dotfiles/nixos/"
-abbr nco "vim ~/.dotfiles/nixos/configuration.nix"
-abbr npk "vim ~/.dotfiles/nixos/modules/pkgs.nix"
+abbr inst 'sudo pacman -S'
+abbr rem 'sudo pacman -Rns'
+abbr clean 'sudo paccache -rk 2'
+abbr reb 'systemctl reboot'
+abbr update-grub 'sudo grub-mkconfig -o /boot/grub/grub.cfg'
 
-abbr lspkg "nix-store --query --requisites /run/current-system | grep"
-abbr lsgen "sudo nix-env -p /nix/var/nix/profiles/system --list-generations"
-abbr lsdel ".dotfiles/scripts/genlist.sh"
-abbr delgen "sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations"
-abbr makecurrent "sudo /run/current-system/bin/switch-to-configuration boot"
+
 
 abbr cfg "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME"
 abbr ga "git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME add"

@@ -52,7 +52,7 @@
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
-        "format": "{temperatureC}°C 📝+Office",
+        "format": "{temperatureC}°C   📝+Office",
         "format-icons": ["", "", ""],
         "on-click": "featherpad",
         "on-click-right": "libreoffice",
