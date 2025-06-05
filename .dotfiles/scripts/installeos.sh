@@ -21,5 +21,7 @@ cfg checkout -f
 cfg config --local status.showUntrackedFiles no
 echo "Konfigurace z repozitáře kompletní"
 
+# git@github.com:lrestj/endos.git
+# ssh://git@codeberg.org/lrestj/endos.git
 
 ##### END OF FILE #####
