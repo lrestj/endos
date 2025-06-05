@@ -30,7 +30,7 @@ sudo mount -t nfs 192.168.77.18:/volume1/Filmy /data/nfs/FilmyNas
 #add to fstab:
 sudo cp /etc/fstab /etc/fstab.bak
 
-sudo cat 03fstabnfs | tee -a /etc/fstab
+cat 3fstabnfs | sudo tee -a /etc/fstab
 
 echo "Připojení Nas Synology proběhlo úspěšně"
 
