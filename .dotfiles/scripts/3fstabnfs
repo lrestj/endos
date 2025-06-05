@@ -1,5 +1,4 @@
 
-
 # Synology nfs shares
 192.168.77.18:/volume1/Rodinas   /data/nfs/Nas  nfs   users,auto,hard 0 0
 
