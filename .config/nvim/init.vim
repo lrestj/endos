@@ -1,6 +1,7 @@
 """"" NEOVIM CONFIGURATION """""
 
     "source ~/.config/nvim/plugin/startify.vim
+    "source ~/.config/nvim/plugin/fzf.vim
 
     "My remaps
     let mapleader=" "
@@ -11,7 +12,8 @@
     nnoremap <leader><leader> :set relativenumber!<CR>
     nnoremap <leader>, :set nohlsearch<CR>
     noremap <leader>s :Startify<CR>
-    noremap <leader>y :Yazi<CR>
+    noremap <leader>y :Tfm<cr>
+    noremap <silent><leader>w :so %<cr>
 
     "Line down and up
     nnoremap <A-j> :m .+1<CR>
@@ -42,15 +44,6 @@
     nnoremap <leader><Tab> :buffer<Space><Tab>
     noremap <leader>v :vnew<CR>
 
-    "Telescope search
-    noremap <A-d> :Telescope find_files<cr>
-    noremap <A-g> :Telescope live_grep<cr>
-    noremap <A-b> :Telescope buffers<cr>
-    noremap <A-u> :Telescope jumplist<cr>
-    noremap <A-o> :Telescope oldfiles<cr>
-    noremap <A-c> :Telescope changes<cr>
-
-
     "Numbered list macro
     noremap <leader>c I0gvg
     
@@ -72,44 +65,42 @@
     let g:suda#prompt = 'Heslo: '
 
     "Statusline
-    highlight StatusLine guifg=#153bda guibg=#000000         
+    hi StatusLine guifg=#153bda guibg=#000000         
     set statusline=%n\ %f\ %m\ \ \ %v\ \ %l/%L%<%h%w%r\ \ \ %y
     set statusline+=%=reg\ {%{v:register}}\ \\ 
 
-   "Plugins
-   call plug#begin()
-     " List your plugins here
-     Plug 'mhinz/vim-startify'
-     Plug 'junegunn/vim-peekaboo'
-     Plug 'LnL7/vim-nix'
-     Plug 'mikavilpas/yazi.nvim'
-     Plug 'nvim-lua/plenary.nvim'
-     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' }
-                              " or    , { 'branch': '0.1.x' }
-   call plug#end()
-
-
-        " Transparent background
-        high Normal guibg=none
-        high NonText guibg=none
-        high LineNr guibg=none
+    " Transparent background
+    high Normal guibg=none
+    high NonText guibg=none
+    high LineNr guibg=none
          
+    " Toggle background transparency
+    let t:isTransparent = 0
+    function! BGToggleTransparency()
+      if t:isTransparent == 0
+        hi Normal guibg=black
+        set background=dark
+        let t:isTransparent = 1
+      else
+        hi Normal guibg=none
+        hi NonText guibg=none
+        hi LineNr guibg=none
+        let t:isTransparent = 0
+      endif
+    endfunction
+    nnoremap <silent><A-t> :call BGToggleTransparency()<CR>
 
-     " Toggle background transparency
-     let t:isTransparent = 0
-     function! BGToggleTransparency()
-       if t:isTransparent == 0
-         hi Normal guibg=black
-         set background=dark
-         let t:isTransparent = 1
-       else
-          hi Normal guibg=none
-          hi NonText guibg=none
-          hi LineNr guibg=none
-         let t:isTransparent = 0
-       endif
-     endfunction
-     nnoremap <silent><A-t> :call BGToggleTransparency()<CR>
+    "Plugins
+    call plug#begin()
+    " List your plugins here
+    Plug 'mhinz/vim-startify'
+    Plug 'junegunn/vim-peekaboo'
+    Plug 'LnL7/vim-nix'
+    Plug 'Rolv-Apneseth/tfm.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'ibhagwan/fzf-lua'
+    Plug 'lambdalisue/vim-suda'
+    call plug#end()
 
 
 """"" END OF FILE """""
