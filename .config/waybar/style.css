@@ -49,8 +49,34 @@ button:hover {
 }
 
 /* you can set a style on hover for any module like this */
+#cpu:hover,
+#temperature:hover,
+#memory:hover,
+#custom-menu:hover,
+#idle_inhibitor:hover,
+#clock:hover,
+#backlight:hover,
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: #A2780E;
+}
+#custom-scan:hover,
+#custom-power:hover,
+#custom-office:hover,
+#custom-kalk:hover,
+#custom-text:hover,
+#custom-fm:hover,
+#custom-browser:hover {
+    background-color: #000000;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
 }
 
 #workspaces button {
@@ -62,11 +88,11 @@ button:hover {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #A2780E;
 }
 
 #workspaces button.active {
-    background-color: #170349;
+    background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -74,27 +100,16 @@ button:hover {
     background-color: #eb4d4b;
 }
 
-#mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
-}
 
 #clock,
 #battery,
 #cpu,
 #memory,
-#disk,
-#network,
 #pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
 #idle_inhibitor,
-#scratchpad,
 #power-profiles-daemon,
-#mpd {
-    padding: 0 10px;
+#tray {
+    padding: 0 7px;
     color: #ffffff;
 }
 
@@ -110,62 +125,94 @@ button:hover {
 #idle_inhibitor,
 #pulseaudio,
 #backlight,
-#battery,
-#clock,
-#power-profiles-daemon,
 #tray,
-#custom-power{
-border-radius: 26px 26px 26px 26px;
-margin-top: 4px;
-margin-bottom: 1px;
+#clock,
+#battery,
+#power-profiles-daemon{
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 4px;
+    margin-bottom: 1px;
 }
 
-
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
-}
-
-#custom-menu {
-background-color: #232334;
-color: #bbccdd;
-}
-
-#cpu {
-    background-color: #232334;
-    color: #bbccdd;
-}
-
-#temperature {
-background-color: #232334;
-color: #bbccdd;
-padding: 0 10px;
-}
-
+#custom-menu, 
+#cpu, 
+#temperature, 
 #memory {
-    background-color: #232334;
-    color: #bbccdd;
+    background-color: #7f7f7f;
+    color: #000000;
+}
+
+#custom-scan,
+#custom-office,
+#custom-kalk,
+#custom-text,
+#custom-power, 
+#custom-fm,
+#custom-browser {
+    margin-top: 4px;
+    margin-bottom: 1px;
+}
+
+#custom-scan{
+    font-size: 17px;
+    background-image: url('/home/libor/.dotfiles/icons/skener.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left : 8;
+}
+    
+#custom-office{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/libreoffice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#custom-kalk{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/kalk.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#custom-text{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/notes.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#custom-fm{
+    font-size: 18px;
+    background-image: url('/home/libor/.dotfiles/icons/fm.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#custom-browser{
+    font-size: 19px;
+    background-image: url('/home/libor/.dotfiles/icons/brave.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 #clock {
-background-color: #64727D;
-
+    background-color: #64727D;
 }
 
 #battery {
-background-color: #170349;
-color: #ffffff;
+    background-color: #64727D;
+    color: #ffffff;
 }
 
 #battery.charging, #battery.plugged {
-color: #ffffff;
-background-color: #26A65B;
+    color: #ffffff;
+    background-color: #64727D;
 }
 
 @keyframes blink {
@@ -177,57 +224,49 @@ background-color: #26A65B;
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-background-color: #f53c3c;
-color: #ffffff;
-animation-name: blink;
-animation-duration: 0.5s;
-animation-timing-function: steps(12);
-animation-iteration-count: infinite;
-animation-direction: alternate;
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #power-profiles-daemon {
-padding-right: 10px;
+    padding-right: 0px;
 }
 
 #power-profiles-daemon.performance {
-background-color: #f53c3c;
-color: #ffffff;
+/* background-color: #f53c3c; */
+    padding: 0 3px;
+    background-color: #64727D;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.balanced {
-background-color: #2980b9;
-color: #ffffff;
+    padding-right: 4px;   
+    background-color: #2980b9;
+    color: #ffffff;
 }
 
 #power-profiles-daemon.power-saver {
-background-color: #2ecc71;
-color: #000000;
+    padding-right: 4px;   
+    background-color: #2ecc71;
+    color: #000000;
 }
 
 label:focus {
     background-color: #000000;
 }
 
-#disk {
-    background-color: #964B00;
-}
-
 #backlight {
-    background-color: #475757;
+    background-color: #64727D;
     color: #ffffff;
 }
 
-#network {
-    background-color: #2980b9;
-}
-
-#network.disconnected {
-    background-color: #f53c3c;
-}
-
 #pulseaudio {
-    background-color: brown;
+    background-color: #64727D;
     color: #ffffff;
 }
 
@@ -236,35 +275,12 @@ label:focus {
     color: #2a5c45;
 }
 
-#wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
-}
-
-#wireplumber.muted {
-    background-color: #f53c3c;
-}
-
-#custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-}
-
 #temperature.critical {
     background-color: #eb4d4b;
 }
 
 #tray {
-    background-color: #5528c8;
+    background-color: #64727D;
 }
 
 #tray > .passive {
@@ -277,7 +293,7 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: #434444;
 }
 
 #idle_inhibitor.activated {
@@ -285,54 +301,17 @@ label:focus {
     color: #000000;
 }
 
-#mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
-}
-
-#mpd.disconnected {
-    background-color: #f53c3c;
-}
-
-#mpd.stopped {
-    background-color: #90b1b1;
-}
-
-#mpd.paused {
-    background-color: #51a37a;
-}
-
-
-#scratchpad {
-    background: rgba(0, 0, 0, 0.2);
-}
-
-#scratchpad.empty {
-	background-color: transparent;
-}
-
-#privacy {
-    padding: 0;
-}
-
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
-
-#privacy-item.screenshare {
-    background-color: #cf5700;
-}
-
-#privacy-item.audio-in {
-    background-color: #1ca000;
-}
-
-#privacy-item.audio-out {
-    background-color: #0069d4;
-}
-
 #custom-power {
     padding-left: 15px;
+    margin-left: 12px;
+    font-size: 13px;
+    background-image: url('/home/libor/.dotfiles/icons/power.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
+#taskbar button {
+    padding: 5 2px;
+}
+/* END OF FILE */
