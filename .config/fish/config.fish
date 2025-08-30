@@ -10,7 +10,7 @@ abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
 abbr yup "ya pack -u"
 abbr reb "reboot"
-abbr inst 'sudo pacman -S'
+abbr in 'sudo pacman -S'
 abbr rem 'sudo pacman -Rns'
 abbr clean 'sudo paccache -rk 2'
 abbr reb 'systemctl reboot'
