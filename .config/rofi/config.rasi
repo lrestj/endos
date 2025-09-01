@@ -11,4 +11,4 @@
                     delay:  20;
                     action: "kb-cancel";}
  }
- @theme "/home/libor/.config/rofi/rofithemes/purple.rasi"
+ @theme "/home/libor/.config/rofi/rofithemes/libor.rasi"
