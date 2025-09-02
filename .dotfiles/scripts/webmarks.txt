@@ -1,0 +1,9 @@
+
+Gmail         G
+NixOS search  N
+Přehraj.to    P
+Sdílej.cz     S
+Titulky.cz    T
+Nerd Fonts    F
+
+[  CapsLk zavřít ]
