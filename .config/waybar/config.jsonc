@@ -5,7 +5,7 @@
 [{
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 36, // Waybar height (to be removed for auto height)
+    "height": 34, // Waybar height (to be removed for auto height)
     "autohide": true,
     "autohide-blocked": false,
     "margin-top": 1,
@@ -77,6 +77,7 @@
     "temperature": {
         "thermal-zone": 0,
         "critical-threshold": 80,
+        "min-length" : 9,
         "format": " {icon} {temperatureC} °C  ",
         "format-icons": ["", "", ""],
         "on-click": "pkill btop || foot -T btop -e btop",
@@ -187,6 +188,7 @@
     },
 
     "power-profiles-daemon": {
+        "min-length" : 4,
         "format": "{icon}",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
