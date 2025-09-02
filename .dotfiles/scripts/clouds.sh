@@ -8,8 +8,7 @@ d=" Odpojit Google Disk"
 selected=$(echo "$a
 $b
 $c
-$d
-Konec" | rofi -theme ~/.config/rofi/rofithemes/cloud.rasi -dmenu -p Úložiště)
+$d" | rofi -theme ~/.config/rofi/rofithemes/cloud.rasi -dmenu -p Úložiště)
 
  if [ "$selected" = "$a" ]; then
    source /home/libor/.dotfiles/scripts/onedrive.sh
