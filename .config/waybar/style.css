@@ -124,16 +124,26 @@ button:hover {
 }
 
 #custom-menu,
-#cpu,
-#temperature,
 #memory,
 #idle_inhibitor,
 #pulseaudio,
 #backlight,
 #clock,
 #battery,
-#power-profiles-daemon{
+#power-profiles-daemon {
     border-radius: 20px 20px 20px 20px;
+    margin-top: 4px;
+    margin-right: 4;
+    margin-bottom: 1px;
+}
+#cpu {
+    border-radius: 20px 0px 0px 20px;
+    margin-top: 4px;
+    margin-right: 0;
+    margin-bottom: 1px;
+}
+#temperature {
+    border-radius: 0px 20px 20px 0px;
     margin-top: 4px;
     margin-right: 4;
     margin-bottom: 1px;
