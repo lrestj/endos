@@ -2,16 +2,19 @@ sort=-time
 layer=overlay
 text-alignment=center
 background-color=#2e3440
+text-color=#aabbcc
 width=333
-height=600
+height=1030
 border-size=3
 border-color=#3307a2
 border-radius=15
 icons=1
 max-icon-size=64
-default-timeout=5000
+icon-path=/home/libor/.dotfiles/icons/oxygen
+default-timeout=3000
 ignore-timeout=0
-font=monospace 10
+font=monospace 12
+anchor=top-center
 
 [urgency=low]
 border-color=#cccccc
@@ -29,7 +32,35 @@ anchor=top-center
 default-timeout=2000
 group-by=category
 
-[category=custom]
-on-button-left=exec brave
+[category=run]
+on-button-left=exec kate && exec makoctl dismiss
 on-button-right=exec kate
-on-button-middle=dismiss
+default-timeout=0
+
+[category=help]
+width=440
+text-alignment=left
+
+[category=center]
+anchor=center
+default-timeout=1500
+
+[category=maxl]
+width=620
+text-alignment=left
+anchor=top-left
+on-button-left=exec makoctl dismiss --all && exec makoctl reload
+
+[category=max]
+width=620
+anchor=top-center
+text-alignment=left
+on-button-left=exec makoctl dismiss --all && exec makoctl reload
+
+[category=min]
+width=250
+
+[category=nas]
+width=350
+text-alignment=left
+

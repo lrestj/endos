@@ -2,6 +2,11 @@
 # If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
+
+[[mgr.prepend_keymap]]
+on  = "M"
+run = "plugin mount"
+
 [[mgr.prepend_keymap]]
 on   = "F"
 run  = "plugin jump-to-char"
@@ -18,7 +23,7 @@ run  = "plugin smart-enter"
 desc = "Enter the child directory, or open the file"
 
 [[mgr.prepend_keymap]]
-on = [ "M" ]
+on = [ "Z" ]
 run = "plugin bookmarks save"
 desc = "Uložit jako záložku"
 
@@ -114,8 +119,8 @@ keymap = [
 	{ on = "s",         run = "search fd",                   desc = "Search files by name using fd" },
 	{ on = "S",         run = "search rg",                   desc = "Search files by content using ripgrep" },
 	{ on = "<C-s>",     run = "escape --search",             desc = "Cancel the ongoing search" },
-	{ on = "z",         run = "plugin zoxide",               desc = "Jump to a directory using zoxide" },
-	{ on = "Z",         run = "plugin fzf",                  desc = "Jump to a directory or reveal a file using fzf" },
+	{ on = "Z",         run = "plugin zoxide",               desc = "Jump to a directory using zoxide" },
+	{ on = "z",         run = "plugin fzf",                  desc = "Jump to a directory or reveal a file using fzf" },
 
 	# Linemode
 	{ on = [ "m", "s" ], run = "linemode size",        desc = "Set linemode to size" },

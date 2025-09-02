@@ -13,6 +13,11 @@ use = "yazi-rs/plugins:smart-enter"
 rev = "55bf699"
 hash = "7918aab6a71caf31b58411f789195677"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "d7588f6"
+hash = "e1de3054c0d1a2d8dc6f007eadc0fa31"
+
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-frappe"
 rev = "02f3fc6"
