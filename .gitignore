@@ -3,3 +3,4 @@
 .config/clipse/clipboard_history.json
 .config/clipse/tmp_files/
 .config/BraveSoftware/
+.config/rclone/rclone.conf
