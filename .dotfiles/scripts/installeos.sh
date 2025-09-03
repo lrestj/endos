@@ -18,7 +18,6 @@ echo ".cfg.git" >> .gitignore
 git clone --bare https://codeberg.org/lrestj/endos.git $HOME/.cfg.git &&
 #alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME' &&
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 echo "Konfigurace z repozitáře kompletní"
 echo -e "\n"
 echo "Nastavení swap"
