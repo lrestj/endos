@@ -78,6 +78,6 @@ git config --global user.name "LrestJ"
 
 echo "Codeberg and Github remote repos added"
 echo -e "\n"
-echo "END OF INSTALLATION" 
+echo "KONEC INSTALACE" 
 
 ##### END OF FILE #####
