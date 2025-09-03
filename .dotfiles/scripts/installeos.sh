@@ -80,5 +80,4 @@ echo "Codeberg and Github remote repos added"
 echo -e "\n"
 echo "END OF INSTALLATION" 
 
-
 ##### END OF FILE #####
