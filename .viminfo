@@ -20,12 +20,14 @@
 $brave
 
 # Historie příkazové řádky (počínaje nejnovější položkou):
+:wq
+|2,0,1757010913,,"wq"
+:w
+|2,0,1757010684,,"w"
+:59,60m62
+|2,0,1757010422,,"59,60m62"
 :q
 |2,0,1757009591,,"q"
-:wq
-|2,0,1757008898,,"wq"
-:w
-|2,0,1757008408,,"w"
 :wq4
 |2,0,1757007346,,"wq4"
 :s
@@ -70,9 +72,9 @@ $brave
 # Historie Debug Line (počínaje nejnovější položkou):
 
 # Registry:
-""0	LINE	0
-	exec-once = $HOME/.dotfiles/scripts/battery-check.sh
-|3,1,0,1,1,0,1757009539,"exec-once = $HOME/.dotfiles/scripts/battery-check.sh"
+"0	CHAR	0
+	(.*)$
+|3,0,0,0,1,0,1757010514,"(.*)$"
 "1	LINE	0
 	
 |3,0,1,1,1,0,1756998625,""
@@ -102,250 +104,275 @@ $brave
 "9	LINE	0
 	
 |3,0,9,1,1,0,1756840633,""
-"-	CHAR	0
-	Authentication Required
-|3,0,36,0,1,0,1757008403,"Authentication Required"
+""-	CHAR	0
+	$
+|3,1,36,0,1,0,1757010541,"$"
 
 # Souborové značky:
 'V  1  0  ~/.config/vim/vimrc
 |4,86,1,0,1756818155,"~/.config/vim/vimrc"
 'W  1  0  ~/.config/waybar/config.jsonc
 |4,87,1,0,1756818281,"~/.config/waybar/config.jsonc"
-'0  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
-|4,48,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
-'1  5  27  ~/.dotfiles/scripts/installeos.sh
-|4,49,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
-'2  50  74  ~/.config/hypr/4-windowsRules.conf
-|4,50,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
-'3  8  20  ~/endos/.config/hypr/3-env.conf
-|4,51,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
-'4  10  34  ~/endos/.config/hypr/3-env.conf
-|4,52,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
-'5  10  34  ~/endos/.config/hypr/3-env.conf
-|4,53,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
-'6  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,54,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
-'7  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,55,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
-'8  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,56,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
-'9  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,57,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
+'0  129  0  ~/.config/hypr/3-keyBindings.conf
+|4,48,129,0,1757011133,"~/.config/hypr/3-keyBindings.conf"
+'1  62  30  ~/.config/hypr/4-windowsRules.conf
+|4,49,62,30,1757010913,"~/.config/hypr/4-windowsRules.conf"
+'2  1  0  ~/endos/.config/hypr/1-autostart.conf
+|4,50,1,0,1757009825,"~/endos/.config/hypr/1-autostart.conf"
+'3  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,51,1,0,1757009786,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+'4  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,52,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+'5  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,53,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+'6  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,54,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+'7  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,55,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+'8  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,56,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+'9  50  74  ~/.config/hypr/4-windowsRules.conf
+|4,57,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  129  0  ~/.config/hypr/3-keyBindings.conf
+|4,39,129,0,1757011133,"~/.config/hypr/3-keyBindings.conf"
+-'  1  0  ~/.config/hypr/3-keyBindings.conf
+|4,39,1,0,1757011060,"~/.config/hypr/3-keyBindings.conf"
+-'  62  30  ~/.config/hypr/4-windowsRules.conf
+|4,39,62,30,1757010913,"~/.config/hypr/4-windowsRules.conf"
+-'  62  30  ~/.config/hypr/4-windowsRules.conf
+|4,39,62,30,1757010913,"~/.config/hypr/4-windowsRules.conf"
+-'  61  35  ~/.config/hypr/4-windowsRules.conf
+|4,39,61,35,1757010438,"~/.config/hypr/4-windowsRules.conf"
+-'  61  35  ~/.config/hypr/4-windowsRules.conf
+|4,39,61,35,1757010438,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1757010323,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1757010323,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/endos/.config/hypr/1-autostart.conf
+|4,39,1,0,1757009825,"~/endos/.config/hypr/1-autostart.conf"
+-'  1  0  ~/endos/.config/hypr/1-autostart.conf
+|4,39,1,0,1757009825,"~/endos/.config/hypr/1-autostart.conf"
+-'  1  0  ~/endos/.config/hypr/1-autostart.conf
+|4,39,1,0,1757009825,"~/endos/.config/hypr/1-autostart.conf"
+-'  1  0  ~/endos/.config/hypr/1-autostart.conf
+|4,39,1,0,1757009825,"~/endos/.config/hypr/1-autostart.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009786,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009786,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009786,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009786,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757009711,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
 -'  1  0  ~/.config/hypr/1-envAutostartDefaultApps.conf
 |4,39,1,0,1757009591,"~/.config/hypr/1-envAutostartDefaultApps.conf"
 -'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
 |4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  37  29  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,37,29,1757009569,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
+-'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+|4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
 -'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
 |4,39,1,0,1757009519,"/run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf"
 -'  5  27  ~/.dotfiles/scripts/installeos.sh
 |4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
 -'  5  27  ~/.dotfiles/scripts/installeos.sh
 |4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757008815,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757008815,"~/.dotfiles/scripts/installeos.sh"
--'  50  74  ~/.config/hypr/4-windowsRules.conf
-|4,39,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
--'  50  74  ~/.config/hypr/4-windowsRules.conf
-|4,39,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
--'  50  74  ~/.config/hypr/4-windowsRules.conf
-|4,39,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
--'  50  74  ~/.config/hypr/4-windowsRules.conf
-|4,39,50,74,1757008453,"~/.config/hypr/4-windowsRules.conf"
--'  49  33  ~/.config/hypr/4-windowsRules.conf
-|4,39,49,33,1757008398,"~/.config/hypr/4-windowsRules.conf"
--'  49  33  ~/.config/hypr/4-windowsRules.conf
-|4,39,49,33,1757008398,"~/.config/hypr/4-windowsRules.conf"
--'  49  33  ~/.config/hypr/4-windowsRules.conf
-|4,39,49,33,1757008398,"~/.config/hypr/4-windowsRules.conf"
--'  49  33  ~/.config/hypr/4-windowsRules.conf
-|4,39,49,33,1757008398,"~/.config/hypr/4-windowsRules.conf"
--'  48  39  ~/.config/hypr/4-windowsRules.conf
-|4,39,48,39,1757008360,"~/.config/hypr/4-windowsRules.conf"
--'  48  39  ~/.config/hypr/4-windowsRules.conf
-|4,39,48,39,1757008360,"~/.config/hypr/4-windowsRules.conf"
--'  48  39  ~/.config/hypr/4-windowsRules.conf
-|4,39,48,39,1757008360,"~/.config/hypr/4-windowsRules.conf"
--'  48  39  ~/.config/hypr/4-windowsRules.conf
-|4,39,48,39,1757008360,"~/.config/hypr/4-windowsRules.conf"
--'  49  7  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,49,7,1757008341,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  49  7  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,49,7,1757008341,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  49  7  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,49,7,1757008341,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  49  7  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,49,7,1757008341,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,1,0,1757008276,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,1,0,1757008276,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,1,0,1757008276,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  1  0  /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
-|4,39,1,0,1757008276,"/run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  8  20  ~/endos/.config/hypr/3-env.conf
-|4,39,8,20,1757007404,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  10  34  ~/endos/.config/hypr/3-env.conf
-|4,39,10,34,1757007353,"~/endos/.config/hypr/3-env.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  1  0  ~/endos/.config/hypr/1-autostart.conf
-|4,39,1,0,1757007269,"~/endos/.config/hypr/1-autostart.conf"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  75  77  ~/.dotfiles/scripts/installeos.sh
-|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  0  ~/.dotfiles/scripts/installeos.sh
-|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
--'  1  7  ~/.cfg.git/MERGE_MSG
-|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
+-'  5  27  ~/.dotfiles/scripts/installeos.sh
+|4,39,5,27,1757008898,"~/.dotfiles/scripts/installeos.sh"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
 
+> ~/.config/hypr/3-keyBindings.conf
+	*	1757011078	0
+	"	129	0
+	^	11	33
+	.	25	0
+	+	11	32
+	+	25	0
+
+> ~/.config/hypr/4-windowsRules.conf
+	*	1757010910	0
+	"	62	30
+	^	62	31
+	.	62	30
+	+	11	0
+	+	48	74
+	+	49	68
+	+	50	75
+	+	61	0
+	+	59	0
+	+	63	0
+	+	61	41
+	+	62	41
+	+	61	43
+	+	62	30
+
 > ~/.config/hypr/1-envAutostartDefaultApps.conf
-	*	1757009569	0
+	*	1757009778	0
 	"	1	0
 
-> /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
-	*	1757009550	0
-	"	37	29
+> ~/endos/.config/hypr/1-autostart.conf
+	*	1757009749	0
+	"	1	0
 
 > ~/.dotfiles/scripts/installeos.sh
-	*	1757008895	0
+	*	1757009711	0
 	"	5	27
 	^	5	28
 	.	5	28
@@ -355,15 +382,9 @@ $brave
 	+	75	78
 	+	5	28
 
-> ~/.config/hypr/4-windowsRules.conf
-	*	1757008408	0
-	"	50	74
-	^	50	75
-	.	50	75
-	+	11	0
-	+	48	74
-	+	49	68
-	+	50	75
+> /run/media/libor/NixOS/home/libor/.config/hypr/1-envAutostartDefaultApps.conf
+	*	1757009687	0
+	"	1	0
 
 > /run/media/libor/NixOS/home/libor/.config/hypr/4-windowsRules.conf
 	*	1757008312	0
@@ -377,10 +398,6 @@ $brave
 	+	9	0
 	+	10	34
 	+	8	20
-
-> ~/endos/.config/hypr/1-autostart.conf
-	*	1757007247	0
-	"	1	0
 
 > ~/.cfg.git/MERGE_MSG
 	*	1757000563	0
@@ -517,14 +534,6 @@ $brave
 > ~/.dotfiles/nixos/hosts/zbook/configuration.nix
 	*	1756819797	0
 	"	1	0
-
-> ~/.config/hypr/3-keyBindings.conf
-	*	1756819722	0
-	"	35	0
-	^	11	33
-	.	25	0
-	+	11	32
-	+	25	0
 
 > ~/.config/hypr/5-keyboardAndMouse.conf
 	*	1756814108	0
