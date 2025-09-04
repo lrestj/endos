@@ -1,0 +1,10 @@
+[terminal]
+vt = current
+
+[initial_session]
+command = "Hyprland"
+user = "libor"
+
+[default_session]
+command = "tuigreet -t -r --remember-session --cmd Hyprland"
+user = "greeter"

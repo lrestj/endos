@@ -20,10 +20,10 @@
 $brave
 
 # Historie příkazové řádky (počínaje nejnovější položkou):
+:w
+|2,0,1757000109,,"w"
 :q
 |2,0,1756841089,,"q"
-:w
-|2,0,1756841075,,"w"
 :wq
 |2,0,1756840647,,"wq"
 :s
@@ -71,35 +71,33 @@ $brave
 |3,0,0,1,1,0,1756840276,"notify-send -t 3000 -i dialog-warning \"Něco se pokazilo...\""
 ""1	LINE	0
 	
-|3,1,1,1,1,0,1756840633,""
+|3,1,1,1,1,0,1756998625,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1756840565,""
+	# The user to run the command as. The privileges this user must have depends
+	# on the greeter. A graphical greeter may for example require the user to be
+	# in the `video` group.
+|3,0,2,1,3,0,1756998622,"# The user to run the command as. The privileges this user must have depends","# on the greeter. A graphical greeter may for example require the user to be","# in the `video` group."
 "3	LINE	0
-	
-|3,0,3,1,1,0,1756840450,""
+	# with whatever you want started, such as `sway`.
+|3,0,3,1,1,0,1756998614,"# with whatever you want started, such as `sway`."
 "4	LINE	0
-	
-|3,0,4,1,1,0,1756822014,""
+	# `agreety` is the bundled agetty/login-lookalike. You can replace `/bin/sh`
+|3,0,4,1,1,0,1756998613,"# `agreety` is the bundled agetty/login-lookalike. You can replace `/bin/sh`"
 "5	LINE	0
-	title="❌ Odpojeno"
-|3,0,5,1,1,0,1756822013,"title=\"❌ Odpojeno\""
+	# The default session, also known as the greeter.
+|3,0,5,1,1,0,1756998608,"# The default session, also known as the greeter."
 "6	LINE	0
-	="/home/libor/.dotfiles/icons/googledrive.png"
-|3,0,6,1,1,0,1756822011,"=\"/home/libor/.dotfiles/icons/googledrive.png\""
+	...
+|3,0,6,1,1,0,1756998603,"..."
 "7	LINE	0
-	 Nixos:
-	    config  C
-	    flake  F
-	    pkgs  P
-	
-|3,0,7,1,5,0,1756819827," Nixos:","    config  C","    flake  F","    pkgs  P",""
+	command = "agreety --cmd /bin/sh"
+|3,0,7,1,1,0,1756998480,"command = \"agreety --cmd /bin/sh\""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1756818527,""
+	       windowrule = stayfocused,$save
+|3,0,8,1,1,0,1756997827,"       windowrule = stayfocused,$save"
 "9	LINE	0
-	    Plug 'junegunn/vim-peekaboo'
-|3,0,9,1,1,0,1756818171,"    Plug 'junegunn/vim-peekaboo'"
+	
+|3,0,9,1,1,0,1756840633,""
 "-	CHAR	0
 	.
 |3,0,36,0,1,0,1756840254,"."
@@ -109,36 +107,180 @@ $brave
 |4,86,1,0,1756818155,"~/.config/vim/vimrc"
 'W  1  0  ~/.config/waybar/config.jsonc
 |4,87,1,0,1756818281,"~/.config/waybar/config.jsonc"
-'0  64  19  ~/.config/waybar/config.jsonc
-|4,48,64,19,1756841089,"~/.config/waybar/config.jsonc"
-'1  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,49,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
-'2  1  0  ~/.config/mako/config
-|4,50,1,0,1756840242,"~/.config/mako/config"
-'3  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,51,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
-'4  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,52,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
-'5  28  0  ~/.dotfiles/scripts/clouds.sh
-|4,53,28,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
-'6  29  0  ~/.dotfiles/scripts/clouds.sh
-|4,54,29,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
-'7  11  6  ~/.dotfiles/scripts/clouds.sh
-|4,55,11,6,1756836612,"~/.dotfiles/scripts/clouds.sh"
-'8  11  6  ~/.dotfiles/scripts/clouds.sh
-|4,56,11,6,1756836612,"~/.dotfiles/scripts/clouds.sh"
-'9  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,57,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
+'0  10  15  /var/tmp/config9VLVyHjd.toml
+|4,48,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+'1  12  0  /var/tmp/configvQltv54g.toml
+|4,49,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+'2  12  0  /var/tmp/configvQltv54g.toml
+|4,50,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+'3  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,51,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+'4  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,52,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+'5  64  19  ~/.config/waybar/config.jsonc
+|4,53,64,19,1756841089,"~/.config/waybar/config.jsonc"
+'6  64  19  ~/.config/waybar/config.jsonc
+|4,54,64,19,1756841089,"~/.config/waybar/config.jsonc"
+'7  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,55,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+'8  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,56,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+'9  1  0  ~/.config/mako/config
+|4,57,1,0,1756840242,"~/.config/mako/config"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  10  15  /var/tmp/config9VLVyHjd.toml
+|4,39,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+-'  1  0  /var/tmp/config9VLVyHjd.toml
+|4,39,1,0,1757000042,"/var/tmp/config9VLVyHjd.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
 -'  64  19  ~/.config/waybar/config.jsonc
 |4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  64  19  ~/.config/waybar/config.jsonc
+|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
+-'  1  0  ~/.config/waybar/config.jsonc
+|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
 -'  1  0  ~/.config/waybar/config.jsonc
 |4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
 -'  8  0  ~/.dotfiles/scripts/googledrive.sh
 |4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
 -'  8  0  ~/.dotfiles/scripts/googledrive.sh
 |4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/umonedrive.sh
+|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
 -'  8  0  ~/.dotfiles/scripts/umonedrive.sh
 |4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
 -'  8  0  ~/.dotfiles/scripts/umonedrive.sh
@@ -147,192 +289,75 @@ $brave
 |4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
 -'  8  0  ~/.dotfiles/scripts/onedrive.sh
 |4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
+-'  8  0  ~/.dotfiles/scripts/onedrive.sh
+|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
 -'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
 |4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
 -'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
 |4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.config/mako/config
-|4,39,1,0,1756840242,"~/.config/mako/config"
--'  1  0  ~/.config/mako/config
-|4,39,1,0,1756840242,"~/.config/mako/config"
--'  11  2  ~/.dotfiles/scripts/clouds.sh
-|4,39,11,2,1756839558,"~/.dotfiles/scripts/clouds.sh"
--'  11  2  ~/.dotfiles/scripts/clouds.sh
-|4,39,11,2,1756839558,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756839282,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756839282,"~/.dotfiles/scripts/clouds.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  6  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,6,0,1756836988,"~/.dotfiles/scripts/googledrive.sh"
--'  28  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,28,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  29  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,29,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  29  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,29,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  28  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,28,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  29  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,29,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  29  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,29,0,1756836846,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,1,0,1756836786,"~/.dotfiles/scripts/googledrive.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836670,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836670,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836670,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836670,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  12  4  ~/.dotfiles/scripts/clouds.sh
-|4,39,12,4,1756836612,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  1  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,1,0,1756836526,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  8  18  ~/.dotfiles/scripts/clouds.sh
-|4,39,8,18,1756836376,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
--'  1  0  ~/.dotfiles/scripts/clouds.sh
-|4,39,1,0,1756836102,"~/.dotfiles/scripts/clouds.sh"
+-'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
+|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
+-'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
+|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> /var/tmp/config9VLVyHjd.toml
+	*	1757000109	0
+	"	10	15
+	^	10	16
+	.	9	22
+	+	9	22
+
+> /var/tmp/configvQltv54g.toml
+	*	1757000026	0
+	"	1	0
+	.	11	0
+	+	11	33
+	+	9	3
+	+	7	18
+	+	8	12
+	+	9	0
+	+	10	0
+	+	11	0
+	+	12	0
+	+	11	0
+
+> ~/.config/hypr/4-windowsRules.conf
+	*	1756997829	0
+	"	11	7
+	.	11	0
+	+	11	0
 
 > ~/.config/waybar/config.jsonc
 	*	1756841075	0
@@ -440,10 +465,6 @@ $brave
 	"	1	0
 	.	64	0
 	+	64	0
-
-> ~/.config/hypr/4-windowsRules.conf
-	*	1756819887	0
-	"	35	0
 
 > ~/.dotfiles/scripts/nsubmap.txt
 	*	1756819829	0
