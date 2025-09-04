@@ -2,7 +2,7 @@
 
 PacmanApps="neovim hyprland gvfs glxinfo network-manager-applet xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk sddm eos-sddm-theme udiskie simple-scan sddm eos-sddm-theme breeze mako rofi rofimoji  ttf-nerd-fonts-symbols-common ttf-hack-nerd awesome-terminal-fonts yazi fish foot waybar lxqt-policykit hypridle wlsunset filelight figlet swaybg pcmanfm-qt geany libreoffice-fresh-cs qt6ct oxygen-icons brightnessctl btop fastfetch qalculate-qt partitionmanager krename mpv vlc okular pamixer pdfarranger rclone qjackctl qpwgraph xournalpp zip p7zip wlsunset kwalletmanager kwallet-pam loupe nwg-look"
 
-AurApps="clipse waypaper brave-bin wlogout hyprshot hyprlock hypridle"
+AurApps="bibata-cursor-theme clipse waypaper brave-bin wlogout hyprshot hyprlock hypridle"
 
 sudo pacman -Syu
 echo "Instalace z repozitáře Arch"
