@@ -20,3 +20,4 @@
 endos/
 .bash_logout
 Public/
+.config/vim/plugged/filepicker.vim/
