@@ -20,12 +20,12 @@
 $brave
 
 # Historie příkazové řádky (počínaje nejnovější položkou):
+:wq
+|2,0,1757002129,,"wq"
 :w
-|2,0,1757000109,,"w"
+|2,0,1757000546,,"w"
 :q
 |2,0,1756841089,,"q"
-:wq
-|2,0,1756840647,,"wq"
 :s
 |2,0,1756822149,,"s"
 :so %
@@ -69,9 +69,9 @@ $brave
 "0	LINE	0
 	notify-send -t 3000 -i dialog-warning "Něco se pokazilo..."
 |3,0,0,1,1,0,1756840276,"notify-send -t 3000 -i dialog-warning \"Něco se pokazilo...\""
-""1	LINE	0
+"1	LINE	0
 	
-|3,1,1,1,1,0,1756998625,""
+|3,0,1,1,1,0,1756998625,""
 "2	LINE	0
 	# The user to run the command as. The privileges this user must have depends
 	# on the greeter. A graphical greeter may for example require the user to be
@@ -98,39 +98,59 @@ $brave
 "9	LINE	0
 	
 |3,0,9,1,1,0,1756840633,""
-"-	CHAR	0
-	.
-|3,0,36,0,1,0,1756840254,"."
+""-	CHAR	0
+	ssh://git@codeberg.org/lrestj/endos.git
+|3,1,36,0,1,0,1757002091,"ssh://git@codeberg.org/lrestj/endos.git"
 
 # Souborové značky:
 'V  1  0  ~/.config/vim/vimrc
 |4,86,1,0,1756818155,"~/.config/vim/vimrc"
 'W  1  0  ~/.config/waybar/config.jsonc
 |4,87,1,0,1756818281,"~/.config/waybar/config.jsonc"
-'0  10  15  /var/tmp/config9VLVyHjd.toml
-|4,48,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
-'1  12  0  /var/tmp/configvQltv54g.toml
-|4,49,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
-'2  12  0  /var/tmp/configvQltv54g.toml
-|4,50,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
-'3  11  7  ~/.config/hypr/4-windowsRules.conf
-|4,51,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
-'4  11  7  ~/.config/hypr/4-windowsRules.conf
-|4,52,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
-'5  64  19  ~/.config/waybar/config.jsonc
-|4,53,64,19,1756841089,"~/.config/waybar/config.jsonc"
-'6  64  19  ~/.config/waybar/config.jsonc
-|4,54,64,19,1756841089,"~/.config/waybar/config.jsonc"
-'7  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,55,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
-'8  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,56,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
-'9  1  0  ~/.config/mako/config
-|4,57,1,0,1756840242,"~/.config/mako/config"
+'0  75  77  ~/.dotfiles/scripts/installeos.sh
+|4,48,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
+'1  1  7  ~/.cfg.git/MERGE_MSG
+|4,49,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
+'2  10  15  /var/tmp/config9VLVyHjd.toml
+|4,50,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+'3  12  0  /var/tmp/configvQltv54g.toml
+|4,51,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+'4  12  0  /var/tmp/configvQltv54g.toml
+|4,52,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+'5  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,53,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+'6  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,54,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+'7  64  19  ~/.config/waybar/config.jsonc
+|4,55,64,19,1756841089,"~/.config/waybar/config.jsonc"
+'8  64  19  ~/.config/waybar/config.jsonc
+|4,56,64,19,1756841089,"~/.config/waybar/config.jsonc"
+'9  8  0  ~/.dotfiles/scripts/googledrive.sh
+|4,57,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
 
 # Seznam skoků (počínaje nejnovější položkou):
+-'  75  77  ~/.dotfiles/scripts/installeos.sh
+|4,39,75,77,1757002129,"~/.dotfiles/scripts/installeos.sh"
+-'  1  0  ~/.dotfiles/scripts/installeos.sh
+|4,39,1,0,1757002057,"~/.dotfiles/scripts/installeos.sh"
+-'  1  7  ~/.cfg.git/MERGE_MSG
+|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
+-'  1  7  ~/.cfg.git/MERGE_MSG
+|4,39,1,7,1757000564,"~/.cfg.git/MERGE_MSG"
 -'  10  15  /var/tmp/config9VLVyHjd.toml
 |4,39,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+-'  10  15  /var/tmp/config9VLVyHjd.toml
+|4,39,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+-'  10  15  /var/tmp/config9VLVyHjd.toml
+|4,39,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+-'  10  15  /var/tmp/config9VLVyHjd.toml
+|4,39,10,15,1757000111,"/var/tmp/config9VLVyHjd.toml"
+-'  1  0  /var/tmp/config9VLVyHjd.toml
+|4,39,1,0,1757000042,"/var/tmp/config9VLVyHjd.toml"
+-'  1  0  /var/tmp/config9VLVyHjd.toml
+|4,39,1,0,1757000042,"/var/tmp/config9VLVyHjd.toml"
+-'  1  0  /var/tmp/config9VLVyHjd.toml
+|4,39,1,0,1757000042,"/var/tmp/config9VLVyHjd.toml"
 -'  1  0  /var/tmp/config9VLVyHjd.toml
 |4,39,1,0,1757000042,"/var/tmp/config9VLVyHjd.toml"
 -'  12  0  /var/tmp/configvQltv54g.toml
@@ -141,6 +161,54 @@ $brave
 |4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
 -'  12  0  /var/tmp/configvQltv54g.toml
 |4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  12  0  /var/tmp/configvQltv54g.toml
+|4,39,12,0,1756998646,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
+-'  1  0  /var/tmp/configvQltv54g.toml
+|4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
 -'  1  0  /var/tmp/configvQltv54g.toml
 |4,39,1,0,1756998421,"/var/tmp/configvQltv54g.toml"
 -'  1  0  /var/tmp/configvQltv54g.toml
@@ -161,6 +229,78 @@ $brave
 |4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
 -'  11  7  ~/.config/hypr/4-windowsRules.conf
 |4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  11  7  ~/.config/hypr/4-windowsRules.conf
+|4,39,11,7,1756997831,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
+-'  1  0  ~/.config/hypr/4-windowsRules.conf
+|4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
 -'  1  0  ~/.config/hypr/4-windowsRules.conf
 |4,39,1,0,1756997820,"~/.config/hypr/4-windowsRules.conf"
 -'  1  0  ~/.config/hypr/4-windowsRules.conf
@@ -189,148 +329,25 @@ $brave
 |4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
 -'  64  19  ~/.config/waybar/config.jsonc
 |4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
--'  64  19  ~/.config/waybar/config.jsonc
-|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
--'  64  19  ~/.config/waybar/config.jsonc
-|4,39,64,19,1756841089,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  1  0  ~/.config/waybar/config.jsonc
-|4,39,1,0,1756841019,"~/.config/waybar/config.jsonc"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/googledrive.sh
-|4,39,8,0,1756840647,"~/.dotfiles/scripts/googledrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/umonedrive.sh
-|4,39,8,0,1756840605,"~/.dotfiles/scripts/umonedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  8  0  ~/.dotfiles/scripts/onedrive.sh
-|4,39,8,0,1756840594,"~/.dotfiles/scripts/onedrive.sh"
--'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
--'  5  0  ~/.dotfiles/scripts/umgoogledrive.sh
-|4,39,5,0,1756840392,"~/.dotfiles/scripts/umgoogledrive.sh"
 
 # Historie značek v souborech (počínaje nejnovější položkou):
+
+> ~/.dotfiles/scripts/installeos.sh
+	*	1757002123	0
+	"	75	77
+	^	75	78
+	.	75	78
+	+	5	61
+	+	3	39
+	+	3	532
+	+	75	78
+
+> ~/.cfg.git/MERGE_MSG
+	*	1757000563	0
+	"	1	7
+	^	1	8
+	.	1	7
+	+	1	7
 
 > /var/tmp/config9VLVyHjd.toml
 	*	1757000109	0
@@ -431,15 +448,6 @@ $brave
 	+	10	2
 	+	11	0
 	+	11	2
-
-> ~/.dotfiles/scripts/installeos.sh
-	*	1756820422	0
-	"	3	531
-	^	3	532
-	.	3	532
-	+	5	61
-	+	3	39
-	+	3	532
 
 > ~/.config/rofi/rofithemes/cloud.rasi
 	*	1756820276	0
