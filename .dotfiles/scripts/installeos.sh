@@ -18,7 +18,6 @@ echo ".cfg.git" >> .gitignore
 git clone --bare https://codeberg.org/lrestj/endos.git $HOME/.cfg.git &&
 #alias cfg='git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME' &&
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME config --local status.showUntrackedFiles no
 echo "Konfigurace z repozitáře kompletní"
 echo -e "\n"
 echo "Nastavení swap"
@@ -79,7 +78,6 @@ git config --global user.name "LrestJ"
 
 echo "Codeberg and Github remote repos added"
 echo -e "\n"
-echo "END OF INSTALLATION" 
-
+echo "KONEC INSTALACE" 
 
 ##### END OF FILE #####
