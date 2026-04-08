@@ -1,0 +1,227 @@
+workspace "Void"
+prefer-no-csd
+screenshot-path "~/Screenshot %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay {
+     skip-at-startup
+}
+
+animations {
+     off
+}
+
+input {
+    keyboard {
+        xkb {
+             layout "cz"
+             options "caps:swapescape"
+        }
+        numlock
+    }
+    touchpad {
+        tap
+        // accel-speed 0.2
+        // off
+    }
+    mouse {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "no-scroll"
+    }
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Classic"
+    xcursor-size 26
+}
+
+layout {
+    gaps 4
+    // always-center-single-column
+    center-focused-column "never"
+    preset-column-widths {
+        proportion 0.333
+        proportion 0.5
+        proportion 1.0
+    }
+    focus-ring {
+        // off
+        width 4
+        active-color "#8000ff"
+        inactive-color "#505050"
+    }
+    struts {
+         // left 15
+        // right 64
+        // top 64
+        // bottom 64
+    }
+}
+
+// Startup list:
+spawn-sh-at-startup "nirileft"
+spawn-sh-at-startup "brightnessctl s 80%"
+spawn-sh-at-startup "pipewire &"
+spawn-sh-at-startup "/usr/libexec/xfce-polkit &"
+spawn-sh-at-startup "/home/libor/.local/bin/niri_tile.py &"
+spawn-at-startup "swaybg" "-i" "/home/libor/.dotfiles/wallpapers/wallpaper4.jpg" "-m" "fill"
+spawn-sh-at-startup "waybar-niri"
+spawn-sh-at-startup "swayidle -w"
+spawn-at-startup "niri" "msg" "action" "focus-workspace" "2"
+spawn-sh-at-startup "nm-applet --indicator &"
+spawn-sh-at-startup "wl-paste --watch cliphist store"
+spawn-sh-at-startup "udiskie -t"
+spawn-sh-at-startup "battery-check"
+spawn-sh-at-startup "wlsunset -l 50.1 -L 16.2 -t 4700 -T 5000"
+
+// Window rules
+window-rule {
+    match app-id="xfce-polkit"
+    match app-id="galculator"
+    // match app-id="hyprpicker"
+    open-floating true
+}
+window-rule {
+    match title="Ovládání hlasitosti"
+    open-floating true
+    default-column-width { fixed 650; }
+    default-window-height { fixed 360; }
+    default-floating-position x=1270 y=8
+}
+window-rule {
+    match app-id="fastfetch"
+    open-floating true
+    default-column-width { fixed 1560; }
+    default-window-height { fixed 828; }
+}
+window-rule {
+    match app-id="btop"
+    open-floating true
+    default-column-width { fixed 1200; }
+    default-window-height { fixed 700; }
+}
+// Rounded corners for all windows:
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+binds {
+    Mod+Shift+comma { show-hotkey-overlay; }
+    Alt+B hotkey-overlay-title="Btop" { spawn-sh "foot --app-id btop btop"; }
+    Mod+X hotkey-overlay-title="PowerMenu" { spawn "powercenterniri"; }
+    Mod+N hotkey-overlay-title="Config menu" { spawn "confm"; }
+    Mod+T hotkey-overlay-title="Open a FileMgr" { spawn "nemo"; }
+    Mod+K hotkey-overlay-title="Open a Galculator" { spawn "galculator"; }
+    Mod+A hotkey-overlay-title="Open a Terminal" { spawn "foot"; }
+    Mod+Backslash hotkey-overlay-title="Run a menu" { spawn-sh "pkill fuzzel || exec fuzzel"; }
+    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+B hotkey-overlay-title="Brave browser" { spawn-sh "$BROWSER"; }
+    Super+V hotkey-overlay-title="Qutebrowser" { spawn "qutebrowser"; }
+    Super+G hotkey-overlay-title="Gmail" { spawn-sh "$BROWSER www.gmail.com"; }
+    Super+E hotkey-overlay-title="Vim" { spawn-sh "wrappedvim"; }
+    Mod+Y hotkey-overlay-title="Open a Yazi" { spawn-sh "foot --app-id yazi -e yazi"; }
+    Mod+C hotkey-overlay-title="Clipboard" { spawn-sh "pkill fuzzel || cliphist-fuzzel-img"; }
+    Mod+Return hotkey-overlay-title="Waybar toggle" { spawn-sh "pkill waybar || waybar-niri"; }
+    Mod+Alt+Return hotkey-overlay-title="Taskbar toggle" { spawn-sh "pkill waybar && waybar --config ~/.config/waybar/config-taskbar"; }
+
+    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "volumeup"; }
+    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "volumedown"; }
+    XF86AudioMute        allow-when-locked=true { spawn-sh "mute"; }
+    XF86AudioMicMute     allow-when-locked=true { spawn-sh "micmute"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn "brightnessup"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn "brightnessdown"; }
+    
+    // Overview, tabbed & floating mode and closing window:
+    Mod+O repeat=false { toggle-overview; }
+    Mod+W { toggle-column-tabbed-display; }
+    Mod+Shift+f    { toggle-window-floating; }
+    Mod+space { switch-focus-between-floating-and-tiling; }
+    Mod+Q repeat=false { close-window; }
+
+    // Column focus and movement:
+    Mod+Left { focus-column-left; }
+    Mod+Down { focus-window-down; }
+    Mod+Up   { focus-window-up; }
+    Mod+Right { focus-column-right; }
+    Mod+Shift+H  { move-column-left; }
+    Mod+Shift+J  { move-window-down; }
+    Mod+Shift+K  { move-window-up; }
+    Mod+Shift+L  { move-column-right; }
+    Mod+Home { focus-column-first; }
+    Mod+End  { focus-column-last; }
+    Mod+Ctrl+Home { move-column-to-first; }
+    Mod+Ctrl+End  { move-column-to-last; }
+
+    // Scratschpad
+    Mod+S { spawn-sh "niri msg workspaces | grep \"\\*.*Void\" && niri msg action focus-workspace-previous || niri msg action focus-workspace Void"; }
+
+    // Workspaces:
+    Alt+right { focus-workspace-down; }
+    Alt+left { focus-workspace-up; }
+    Alt+Page_Down      { focus-workspace-down; }
+    Alt+Page_Up        { focus-workspace-up; }
+    Mod+Alt+Page_Down { move-column-to-workspace-down; }
+    Mod+Alt+Page_Up   { move-column-to-workspace-up; }
+    Mod+Shift+Page_Down { move-workspace-down; }
+    Mod+Shift+Page_Up   { move-workspace-up; }
+
+    Mod+Alt+S { move-column-to-workspace "Void" focus=false; }
+    Mod+Alt+left { move-column-to-workspace 1; }
+    Mod+Alt+right { move-column-to-workspace 2; }
+    Mod+Alt+down { move-column-to-workspace 3; }
+    Mod+Alt+up { move-column-to-workspace 4; }
+    Shift+left { move-column-to-workspace 1 focus=false; }
+    Shift+right { move-column-to-workspace 2 focus=false; }
+    Shift+down { move-column-to-workspace 3 focus=false; }
+    Shift+up { move-column-to-workspace 4 focus=false; }
+
+    // Workspaces mouse:
+    Mod+WheelScrollDown      cooldown-ms=150 { focus-workspace-down; }
+    Mod+WheelScrollUp        cooldown-ms=150 { focus-workspace-up; }
+    Mod+Ctrl+WheelScrollDown cooldown-ms=150 { move-column-to-workspace-down; }
+    Mod+Ctrl+WheelScrollUp   cooldown-ms=150 { move-column-to-workspace-up; }
+    Mod+WheelScrollRight      { focus-column-right; }
+    Mod+WheelScrollLeft       { focus-column-left; }
+    Mod+Ctrl+WheelScrollRight { move-column-right; }
+    Mod+Ctrl+WheelScrollLeft  { move-column-left; }
+
+    // Mouse horizontal scrolling:
+    Mod+Shift+WheelScrollDown      { focus-column-right; }
+    Mod+Shift+WheelScrollUp        { focus-column-left; }
+    Mod+Ctrl+Shift+WheelScrollDown { move-column-right; }
+    Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
+
+    // Move the focused window in and out of a column.
+    Mod+Comma  { consume-window-into-column; }
+    Mod+Period { expel-window-from-column; }
+    Mod+Ctrl+left  { consume-or-expel-window-left; }
+    Mod+Ctrl+right { consume-or-expel-window-right; }
+
+    // Column preset and size:
+    Mod+R { switch-preset-column-width; }
+    Mod+Shift+R { switch-preset-window-height; }
+    Mod+Ctrl+R { reset-window-height; }
+    Mod+F { maximize-column; }
+    Mod+Alt+F { fullscreen-window; }
+    Mod+Ctrl+F { expand-column-to-available-width; }
+    Mod+KP_Insert { center-column; }
+    Mod+Ctrl+C { center-visible-columns; }
+    Mod+Shift+KP_Insert { center-visible-columns; }
+    Mod+Shift+left { set-column-width "-5%"; }
+    Mod+Shift+right { set-column-width "+5%"; }
+    Mod+Shift+up { set-window-height "-5%"; }
+    Mod+Shift+down { set-window-height "+5%"; }
+
+    // Screenshot:
+    Ctrl+Insert { screenshot; }
+    Alt+Insert { screenshot-screen; }
+    Mod+Insert { screenshot-window; }
+
+    // The quit actions:
+    Ctrl+Alt+Delete { quit; }
+    Mod+Shift+P { power-off-monitors; }
+    Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
+}

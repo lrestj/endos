@@ -1,0 +1,16 @@
+#!/bin/bash
+
+a="Qutebrowser"
+b="Brave"
+ai="\0icon\x1fqutebrowser"
+bi="\0icon\x1fbrave"
+
+selected=$(echo -e "$a$ai\n$b$bi" | fuzzel --auto-select --config ~/.config/fuzzel/powercenter.ini -d )
+case $selected in
+    "$a")
+        qutebrowser;;
+    "$b")
+        brave-browser;;
+       *)
+        notify-send -t 1200 -i dialog-warning "Přerušeno uživatelem"
+esac

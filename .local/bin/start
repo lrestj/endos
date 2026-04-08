@@ -1,0 +1,32 @@
+#!/bin/bash
+
+echo "##############################"
+echo "#                            #"
+echo "#  HOLA, VYBER SEZENÍ:       #"
+echo "#  v) VOID Niri              #"
+echo "#  r) RESTARTOVAT            #"
+echo "#  x) VYPNOUT                #"
+echo "#                            #"
+echo "##############################"
+read -t 6 -n 1 -s wm_choice
+case $wm_choice in
+v)
+exec dbus-run-session /usr/bin/niri --session
+;;
+x)
+echo "Vypínání..."
+exec loginctl poweroff
+sleep 1
+;;
+r)
+echo "Restart..."
+sleep 1
+exec loginctl reboot
+;;
+*)
+echo "SPOUŠTÍM VOID Niri"
+sleep 1
+exec dbus-run-session niri --session
+;;
+esac
+

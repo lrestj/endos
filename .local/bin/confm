@@ -1,0 +1,39 @@
+#!/bin/bash
+
+# Menu
+a=" Vimrc"
+b="Niri conf"
+c="Waybar config"
+d="Fish config"
+e="Fastfetch"
+f="Stuff2remember"
+g="Add new script"
+
+# Ikony
+ai="\0icon\x1fvim"
+bi="\0icon\x1fniri"
+ci="\0icon\x1fwayland"
+di="\0icon\x1ffish"
+ei="\0icon\x1fdesktop-effects"
+fi="\0icon\x1fnotepad"
+gi="\0icon\x1ftext-x-script"
+
+selected=$(echo -e "$b$bi\n$a$ai\n$e$ei\n$c$ci\n$d$di\n$f$fi\n$g$gi" | fuzzel --lines 14 --auto-select -d )
+case $selected in
+    "$a")
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/vim/vimrc";;
+    "$b")
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/niri/config.kdl";;
+    "$c")
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/waybar/config-niri.jsonc";;
+    "$d")
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.config/fish/config.fish";;
+    "$e")
+        foot --app-id fastfetch bash -c "fastfetch; read";;
+    "$f")
+        foot --app-id vim bash -c "sleep 0.1; exec vim ~/.dotfiles/other/stuff2remember.txt";;
+    "$g")
+        addnew;;
+    *)
+        notify-send "Nic k provedení";;
+esac
