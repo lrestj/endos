@@ -16,7 +16,7 @@ input {
              layout "cz"
              options "caps:swapescape"
         }
-        numlock
+        // numlock
     }
     touchpad {
         tap
