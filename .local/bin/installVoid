@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#set -e
+
 echo "##########################"
 echo "#  Instalace balíčků...  #"
 echo "##########################"
@@ -10,27 +12,82 @@ sudo xbps-install -S
 sudo xbps-install -S void-repo-nonfree  &&
 sudo xbps-install -S intel-ucode
 
-echo "##########################"
-echo "#  Naistalovat NVIDIA ?  #"
-echo "##########################"
-echo
-while true; do
-    read -r -n 1 -p "Vyberte (A/N): " answer
-    case $answer in
-        [Aa]* ) sudo xbps-install -S nvidia; break;;
-        [Nn]* ) break;;
-        * ) echo "Vyberte A, nebo N.";;
-    esac
-done
-
 # # Installing pkgs
 sudo xbps-install -S 7zip nemo nemo-fileroller Waybar alsa-pipewire autofs  baobab brave-browser breeze-icons brightnessctl btop chrony cliphist cryptsetup dconf-editor dialog elogind evince fastfetch fd file-roller fish-shell fontmanager foot fuzzel fzf galculator geany glxinfo gparted greetd grimshot gufw gvfs gvim hplip-gui hunspell-cs hunspell-en intel-video-accel jq libreoffice libreoffice-i18n-cs libva-utils linux-headers lvm2 mako mdadm mesa-intel-dri mpv network-manager-applet nfs-utils niri nwg-look pamixer papirus-icon-theme pavucontrol pipewire power-profiles-daemon qt5-wayland qt6-wayland qt6ct qytdl resvg ristretto simple-scan snooze swayidle swaylock tmux tuigreet tumbler udiskie unzip vlc-devel void-docs-browse void-live-audio wlsunset xdg-desktop-portal-gtk xdg-desktop-portal-gnome xdg-user-dirs xfce-polkit xhost xorg-fonts xournalpp xtools xwayland-satellite xz yazi zenity zip
 
-# Clone config from git repo
-git clone --bare -b voidniri --single-branch https://github.com/lrestj/probook $HOME/.cfg.git &&
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
+echo
+echo "##################################"
+echo "#  Na jaký počítač instalujete?  #"
+echo "#  Zbook = 1                     #"
+echo "#  Probook = 2                   #"
+echo "#  Mirantb = 3                   #"
+echo "##################################"
 
-# Services
+while true; do
+    read -r -n 1 -p " Vyberte 1/2/3: " answer
+    case $answer in
+        [1]* ) echo
+               echo "####################################"
+               echo "#                                  #"
+               echo "#  Probíhá konfigurace Zbook...    #"
+               echo "#                                  #"
+               echo "####################################"
+               sudo xbps-install -S nvidia
+               git clone --bare https://github.com/lrestj/voidlinux.git $HOME/.cfg.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+               echo
+               echo "###################################"
+               echo "#  Konfigurace git repozitáře...  #"
+               echo "###################################"
+               git config --global user.email "rest@seznam.cz"
+               git config --global user.name "LrestJ"
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/voidlinux.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/voidlinux.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+               break;;
+        [2]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Probíhá konfigurace Probook...    #"
+               echo "#                                    #"
+               echo "######################################"
+               git clone --bare -b voidniri --single-branch https://github.com/lrestj/probook.git $HOME/.cfg.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+               echo
+               echo "###################################"
+               echo "#  Konfigurace git repozitáře...  #"
+               echo "###################################"
+               git config --global user.email "rest@seznam.cz"
+               git config --global user.name "LrestJ"
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/probook.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/probook.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+               break;;
+        [3]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Probíhá konfigurace Mirantb...    #"
+               echo "#                                    #"
+               echo "######################################"
+               git clone --bare -b voidniri --single-branch https://github.com/lrestj/probook.git $HOME/.cfg.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+               echo
+               echo "###################################"
+               echo "#  Konfigurace git repozitáře...  #"
+               echo "###################################"
+               git config --global user.email "rest@seznam.cz"
+               git config --global user.name "LrestJ"
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/mirantb.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/mirantb.git
+               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+               break;;
+         * ) echo "Vyberte 1, 2, nebo 3";;
+     esac
+done
+  
 echo "###########################"
 echo "#  Konfigurace služeb...  #"
 echo "###########################"
@@ -60,27 +117,12 @@ sudo ln -s /etc/sv/chronyd /var/service/
 mkdir Dokumenty Videa Hudba Stažené Public Templates
 
 echo
-echo "###################################"
-echo "#  Reconfig initramfs...  #"
-echo "###################################"
-#exec $HOME/.local/bin/inreconf
-
+echo "#########################"
+echo "#                       #" 
+echo "#  Dokončení instalace  #" 
+echo "#                       #" 
+echo "#########################"
 echo
-echo "###################################"
-echo "#  Konfigurace git repozitáře...  #"
-echo "###################################"
-git config --global user.email "rest@seznam.cz"
-git config --global user.name "LrestJ"
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/probook.git
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/probook.git
-git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+exec $HOME/.local/bin/inreconf
 
-echo -e "\n"
-echo "############################"
-echo "#                          #" 
-echo "#  Konec instalace         #" 
-echo "#                          #" 
-echo "############################"
-echo
-
+### END OF FILE ###
