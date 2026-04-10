@@ -101,3 +101,10 @@ c.colors.tabs.selected.odd.bg = palette['background']
 # Type: QtColor
 c.colors.tabs.selected.odd.fg = palette['foreground']
 
+# Bottom border color of the selected completion item.
+c.colors.completion.item.selected.border.bottom = '#000000'
+
+# Top border color of the completion widget category headers.
+c.colors.completion.item.selected.border.top = '#000000'
+
+
