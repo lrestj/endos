@@ -71,6 +71,7 @@
             pdfarranger
             polkit_gnome
             python3Minimal
+            qutebrowser
             rclone
             reaper  
             reaper-reapack-extension

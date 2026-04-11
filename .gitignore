@@ -93,3 +93,4 @@ voidsway/
 *.tmp
 .config/REAPER/ColorThemes/
 .config/REAPER/Data/
+.local/share/qutebrowser/
