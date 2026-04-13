@@ -16,7 +16,7 @@ case $selected in
     "$b")
         sleep 0.5; niri msg action quit --skip-confirmation;;
     "$c")
-        sleep 0.5; loginctl reboot;;
+        sleep 0.5; systemctl reboot;;
     "$d")
-        sleep 0.5; loginctl poweroff;;
+        sleep 0.5; systemctl poweroff;;
 esac
