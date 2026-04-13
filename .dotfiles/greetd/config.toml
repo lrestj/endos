@@ -3,12 +3,12 @@
 vt = 7
 
 [initial_session]
-command = "dbus-run-session niri --session"
+command = "niri-session"
 user = "libor"
 
 [default_session]
 # The command to start tuigreet
-command = "tuigreet --greeting 'Vítejte ve VoidLinux' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S' --remember --remember-session --power-reboot 'loginctl reboot' --power-shutdown 'loginctl poweroff' --cmd 'dbus-run-session niri --session'"
+command = "tuigreet --greeting 'Vítejte v endeavourOS' --asterisks --time --time-format '%A, %d. %B %Y • %H:%M:%S' --remember --remember-session --power-reboot 'systemctl reboot' --power-shutdown 'systemctl poweroff' --cmd 'niri-session'"
 # The user that runs the greeter
 user = "greeter"
 
