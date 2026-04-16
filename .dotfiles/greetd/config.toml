@@ -1,6 +1,6 @@
 # /etc/greetd/config.toml
 [terminal]
-vt = 7
+vt = "current"
 
 [initial_session]
 command = "dbus-run-session niri --session"
