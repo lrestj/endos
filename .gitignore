@@ -99,3 +99,6 @@ Templates/
 .dbus/
 .inputrc
 .dotfiles/install/
+install/
+probook/
+zbook/
