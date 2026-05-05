@@ -102,3 +102,5 @@ Templates/
 install/
 probook/
 zbook/
+.config/reflector-simple-free-params.txt
+.parallel/
