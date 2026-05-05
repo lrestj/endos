@@ -177,7 +177,7 @@
     },
 
     "power-profiles-daemon": {
-        "format": "{icon}",
+        "format": " {icon} ",
         "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
         "tooltip": true,
         "format-icons": {
@@ -187,14 +187,6 @@
             "power-saver": " "
         }
     },
-    "sway/language": {
-        "format": " {} ",
-        "min-length" : 4,
-        "format-cs": "🇨🇿",
-        "format-en": "🇺🇸",
-        "on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next"
-    },
-
     "custom/power": {
         "format" : "  ",
         "tooltip-format": "",
