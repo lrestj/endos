@@ -110,7 +110,7 @@ button:hover {
 #idle_inhibitor,
 #power-profiles-daemon,
 #tray {
-    padding: 0px 7px;
+    padding: 5px 5px;
     color: #ffffff;
 }
 
