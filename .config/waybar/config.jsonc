@@ -27,7 +27,8 @@
         "custom/browser"
     ],
     "modules-center": [
-        "niri/window"
+        // "niri/window"
+        "wlr/taskbar"
     ],
     "modules-right": [
         "idle_inhibitor",
@@ -38,7 +39,6 @@
         "clock",
         "battery",
         "power-profiles-daemon",
-        // "sway/language",
         "custom/power"
     ],
 
@@ -108,6 +108,14 @@
         "format":"      ",
         "tooltip-format": "Internet",
         "on-click": "brave-browser"
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 17,
+        "tooltip": true,
+        "tooltip-format": "{app_id}",
+        "on-click": "activate",
+        "on-click-right": "close"
     },
 
     "idle_inhibitor": {
@@ -192,28 +200,28 @@
         "tooltip-format": "",
         "on-click": "power"
     }
-}, 
+}] 
 
 
 // TASK BAR AT THE RIGHT
 
-{
-    "layer": "top", // Waybar at top layer
-    "position": "right", 
-    //"height": 30,
-    // "width": 1280,
-    "spacing": 4,
-    // Choose the order of the modules
-    "modules-center": ["wlr/taskbar"],
-    // Modules configuration
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "icon-size": 38,
-        "tooltip": true,
-        "tooltip-format": "{app_id}",
-        "on-click": "activate",
-        "on-click-right": "close"
-    }
-}]
+//{
+//    "layer": "top", // Waybar at top layer
+//    "position": "right", 
+//    //"height": 30,
+//    // "width": 1280,
+//    "spacing": 4,
+//    // Choose the order of the modules
+//    "modules-center": ["wlr/taskbar"],
+//    // Modules configuration
+//    "wlr/taskbar": {
+//        "format": "{icon}",
+//        "icon-size": 38,
+//        "tooltip": true,
+//        "tooltip-format": "{app_id}",
+//        "on-click": "activate",
+//        "on-click-right": "close"
+//    }
+//}]
 
 // END OF FILE
