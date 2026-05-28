@@ -1,4 +1,4 @@
-workspace "endOS"
+workspace "Arch"
 prefer-no-csd
 screenshot-path "~/Screenshot %Y-%m-%d %H-%M-%S.png"
 
@@ -69,6 +69,7 @@ spawn-at-startup "swaybg" "-i" "/home/libor/.dotfiles/wallpapers/wallpaper4.jpg"
 spawn-sh-at-startup "waybar"
 spawn-sh-at-startup "swayidle -w"
 spawn-at-startup "niri" "msg" "action" "focus-workspace" "2"
+spawn-sh-at-startup "firewall-applet &"
 spawn-sh-at-startup "nm-applet --indicator &"
 spawn-sh-at-startup "wl-paste --watch cliphist store"
 spawn-sh-at-startup "udiskie -t"
