@@ -8,7 +8,8 @@ abbr !! --position anywhere --function last_history_item
 abbr sudo "sudo"
 abbr ls "ls --color=auto"
 abbr grep "grep --color=auto"
-abbr yup "ya pack -u"
+abbr yay "sudo pacman -Syu"
+abbr yup "ya pkg upgrade"
 
 abbr in "sudo pacman -S"
 abbr se "pacman -Q"
