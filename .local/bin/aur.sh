@@ -3,6 +3,7 @@
 # Ukončit skript při jakékoliv chybě
 set -euo pipefail
 
+for PKG_NAME in $@; do
 # Kontrola, zda byl zadán název balíčku
 if [ -z "${1:-}" ]; then
     echo "Chyba: Nebyl zadán žádný název AUR balíčku."
@@ -10,7 +11,7 @@ if [ -z "${1:-}" ]; then
     exit 1
 fi
 
-PKG_NAME="$1"
+# PKG_NAME="$1"
 BUILD_DIR="$HOME/.local/src"
 
 # Krok 2: Vytvoření čistého adresáře pro sestavení
@@ -30,8 +31,8 @@ if [ -d "$PKG_NAME" ]; then
         echo "##########################################"
         sleep 3
         git pull
-        echo "==> Otevírám PKGBUILD ke kontrole..."
-        sleep 2
+        echo "===>  Otevírám $PKG_NAME PKGBUILD ke kontrole...  <==="
+        sleep 3
         vim PKGBUILD
 
         echo
@@ -65,8 +66,8 @@ git clone "https://aur.archlinux.org/${PKG_NAME}.git"
     cd "$PKG_NAME"
 fi
 
-echo "==> Otevírám PKGBUILD ke kontrole..."
-sleep 2
+echo "===>  Otevírám $PKG_NAME PKGBUILD ke kontrole...  <==="
+sleep 3
 vim PKGBUILD
 
 echo
@@ -90,4 +91,4 @@ done
 # -r: po úspěšném sestavení odstraní nepotřebné build závislosti
 echo "==> Sestavuji a instaluji balíček pomocí makepkg..."
 makepkg -sir
-
+done
