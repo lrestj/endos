@@ -104,3 +104,9 @@ probook/
 zbook/
 .config/reflector-simple-free-params.txt
 .parallel/
+.config/kwalletrc
+.gnupg/public-keys.d/.#lk0x00007f1830000c60.archlinux.8054
+.gnupg/public-keys.d/pubring.db.lock
+.local/share/bemoji/
+.local/share/kwalletd/
+.local/state/bemoji-history.txt

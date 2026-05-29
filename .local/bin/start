@@ -3,7 +3,7 @@
 echo "##############################"
 echo "#                            #"
 echo "#  HOLA, VYBER SEZENÍ:       #"
-echo "#  s) SPUSTIT endOS          #"
+echo "#  s) SPUSTIT ARCH           #"
 echo "#  r) RESTARTOVAT            #"
 echo "#  x) VYPNOUT                #"
 echo "#                            #"
