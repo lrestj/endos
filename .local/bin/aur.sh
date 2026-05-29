@@ -30,7 +30,26 @@ if [ -d "$PKG_NAME" ]; then
         echo "##########################################"
         sleep 3
         git pull
-        makepkg -sir
+        echo "==> Otevírám PKGBUILD ke kontrole..."
+        sleep 2
+        vim PKGBUILD
+
+        echo
+        echo "##############################"
+        echo "#  Vše O.K - pokračovat...?  #"
+        echo "##############################"
+        while true; do
+            read -r -n 1 -p "Vyberte (A/N): " answer
+            case $answer in
+                [Aa]* ) echo -e "\n Instaluji..."
+                        sleep 1
+                        break;;
+                [Nn]* ) echo -e "\nPřerušeno uživatelem"
+                        exit 1;;
+                * ) echo -e "\nVyberte A nebo N.";;
+            esac
+        done
+                makepkg -sir
         echo "################################"
         echo "#  Aktualizace kompletní.      #"
         echo "################################"
@@ -46,10 +65,25 @@ git clone "https://aur.archlinux.org/${PKG_NAME}.git"
     cd "$PKG_NAME"
 fi
 
-echo "==> Otevírám PKGBUILD ke kontrole. Pro ukončení prohlížení stiskněte 'q'..."
-sleep 5
+echo "==> Otevírám PKGBUILD ke kontrole..."
+sleep 2
 vim PKGBUILD
 
+echo
+echo "##############################"
+echo "#  Vše O.K - pokračovat...?  #"
+echo "##############################"
+while true; do
+    read -r -n 1 -p "Vyberte (A/N): " answer
+    case $answer in
+        [Aa]* ) echo -e "\n Instaluji..."
+                sleep 1
+                break;;
+        [Nn]* ) echo -e "\nPřerušeno uživatelem"
+                exit 1;;
+        * ) echo -e "\nVyberte A nebo N.";;
+    esac
+done
 # Krok 5: Sestavení a instalace balíčku
 # -s: automaticky nainstaluje chybějící závislosti přes pacman
 # -i: nainstaluje výsledný balíček do systému
