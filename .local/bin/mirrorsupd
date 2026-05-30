@@ -1,0 +1,4 @@
+#!/bin/bash
+
+sudo cp -fv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.old
+sudo reflector --verbose --download-timeout 3 --country CZ --country DE --country SK --score 50 --fastest 6 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
