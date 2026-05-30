@@ -110,3 +110,4 @@ zbook/
 .local/share/bemoji/
 .local/share/kwalletd/
 .local/state/bemoji-history.txt
+.cargo/

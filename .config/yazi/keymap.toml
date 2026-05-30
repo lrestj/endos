@@ -67,5 +67,9 @@ desc = "Go to a directory interactively"
 on = [ "g", "n" ]
 run = "cd /nfs"
 desc = "Go to NAS" 
+[[mgr.prepend_keymap]]
+on = [ "g", "l" ]
+run = "cd ~/.local"
+desc = "Go to NAS" 
 
 ### END OF FILE ###

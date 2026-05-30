@@ -32,7 +32,7 @@ if [ -d "$PKG_NAME" ]; then
         sleep 3
         git pull
         echo "===>  Otevírám $PKG_NAME PKGBUILD ke kontrole...  <==="
-        sleep 3
+        sleep 1
         vim PKGBUILD
 
         echo
@@ -50,7 +50,7 @@ if [ -d "$PKG_NAME" ]; then
                 * ) echo -e "\nVyberte A nebo N.";;
             esac
         done
-                makepkg -sir
+                makepkg -sir --noconfirm
         echo "################################"
         echo "#  Aktualizace kompletní.      #"
         echo "################################"
@@ -67,7 +67,7 @@ git clone "https://aur.archlinux.org/${PKG_NAME}.git"
 fi
 
 echo "===>  Otevírám $PKG_NAME PKGBUILD ke kontrole...  <==="
-sleep 3
+sleep 1
 vim PKGBUILD
 
 echo
@@ -85,10 +85,6 @@ while true; do
         * ) echo -e "\nVyberte A nebo N.";;
     esac
 done
-# Krok 5: Sestavení a instalace balíčku
-# -s: automaticky nainstaluje chybějící závislosti přes pacman
-# -i: nainstaluje výsledný balíček do systému
-# -r: po úspěšném sestavení odstraní nepotřebné build závislosti
 echo "==> Sestavuji a instaluji balíček pomocí makepkg..."
-makepkg -sir
+makepkg -sir --noconfirm
 done
