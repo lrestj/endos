@@ -10,23 +10,18 @@ echo "#                            #"
 echo "##############################"
 read -n 1 -s wm_choice
 case $wm_choice in
-"")
-exec niri-session -l
+"") exec niri-session -l
 ;;
-s)
-exec niri-session -l
+s) exec niri-session -l
 ;;
-x)
-echo "Vypínání..."
-exec systemctl poweroff
-sleep 1
+x) echo "Vypínání..."
+   exec systemctl poweroff
+   sleep 1
 ;;
-r)
-echo "Restart..."
-sleep 1
-exec systemctl reboot
+r) echo "Restart..."
+   sleep 1
+   exec systemctl reboot
 ;;
-*)
-echo "Vyberte z možností"
+*) echo "Vyberte z možností"
 ;;
 esac
